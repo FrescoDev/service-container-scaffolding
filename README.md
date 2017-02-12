@@ -20,7 +20,7 @@
 ### Run as Docker Container
 
 1. Run: ```docker build -t "frescodev/service-scaffolding:latest" .``` to build the container image hosted on port 8888
-2. Run: ```docker run -p 8888:8888 -d sequensis/service-scaffolding``` to run the container image and map it to your local 8888 port
+2. Run: ```docker run -p 8888:8888 -d frescodev/service-scaffolding``` to run the container image and map it to your local 8888 port
 
 ## Running the Tests
 
