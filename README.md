@@ -2,6 +2,8 @@
 
 [SERVICE DESCRIPTION].
 
+[![Build Status](https://travis-ci.org/FrescoDev/service-container-scaffolding.svg?branch=master)](https://travis-ci.org/FrescoDev/service-container-scaffolding)
+
 ### Prerequisities
 
 * node/npm
