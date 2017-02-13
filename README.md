@@ -9,7 +9,7 @@
 * node/npm
 * docker
 * nodemon
-* heroku-cli
+* heroku cli
 
 ### Install and Run Locally
 
