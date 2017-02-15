@@ -1,16 +1,14 @@
 import * as chai from 'chai';
 
 import server from '../test-helpers/server.mock';
-import settings from '../../app/configuration';
 
 const expect = chai.expect;
-const version = settings.apiVersion;
 
 describe('Call to GET service metadata at /meta endpoint', () => {
   describe('#200', () => {
     it('should return json', (done) => {
       server
-        .get(`${version}/meta`)
+        .get(`/meta`)
         .end((err, res) => {
           expect(res)
             .to
@@ -25,7 +23,7 @@ describe('Call to GET service metadata at /meta endpoint', () => {
 
     it('should return the API version', (done) => {
       server
-        .get(`${version}/meta`)
+        .get(`/meta`)
         .end((err, res) => {
           expect(res)
             .to
@@ -33,14 +31,14 @@ describe('Call to GET service metadata at /meta endpoint', () => {
             .status(200);
           expect(res.body.version)
             .to
-            .eql(version);
+            .eql('1.0');
           done();
         });
     });
 
     it('should return an OK status', (done) => {
       server
-        .get(`${version}/meta`)
+        .get(`/meta`)
         .end((err, res) => {
           expect(res)
             .to
@@ -55,7 +53,7 @@ describe('Call to GET service metadata at /meta endpoint', () => {
 
     it('should return a description of the service', (done) => {
       server
-        .get(`${version}/meta`)
+        .get(`/meta`)
         .end((err, res) => {
           expect(res)
             .to

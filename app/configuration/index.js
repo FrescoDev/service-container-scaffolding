@@ -1,5 +1,5 @@
-import path from 'path';
 import {merge} from 'lodash';
+import path from 'path';
 
 // Default configuations applied to all environments
 const defaultConfig = {
@@ -11,7 +11,6 @@ const defaultConfig = {
       production: process.env.NODE_ENV === 'production'
     }
   },
-  apiVersion: require('../../package.json').apiVersion,
   root: path.normalize(__dirname + '/../../..'),
   port: process.env.PORT || 4567,
   ip: process.env.IP || '0.0.0.0',

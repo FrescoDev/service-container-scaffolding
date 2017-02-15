@@ -5,7 +5,7 @@ class MetaHandler extends BaseHandler {
   index(req, res) {
 		res.json({
 			description: 'This skeletal applicaiton should serve as a template for developing http services',
-			version : settings.apiVersion,
+			version : '1.0',
 			health: 'ok'
 		});
 	}
