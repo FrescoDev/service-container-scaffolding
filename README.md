@@ -11,7 +11,7 @@ Live: https://service-container-scaffolding.herokuapp.com/
 * node/npm
 * docker
 * nodemon
-* heroku-cli
+* heroku cli
 
 ### Install and Run Locally
 
@@ -28,7 +28,7 @@ Live: https://service-container-scaffolding.herokuapp.com/
 ### Deploy to Heroku
 
 1. Run: ```heroku login``` and enter credentials
-2. Run: ```heroku create``` to create the app on Heroku
+2. Run: ```heroku create``` to create the app on Heroku OR Run: ```heroku git:remote -a service-container-scaffolding``` to add the heroku git repo
 3. Run: ```git push heroku master``` to activate the deployment
 4. Run: ```heroku ps:scale web=1git push heroku master``` to ensure at least one instance of the app is running
 5. Run: ```heroku open``` to visit the app's URL
